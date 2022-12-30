@@ -1,14 +1,14 @@
 # UniswapV2 flashloan 
 
-A simple implementation of `IUniswapV2Callee` that supports cycle swapping of tokens. In this contract and test code the following swap-cycle as hardcoded: 
-`wETH -> LINK -> DAI -> wETH`, however first token (and last one too, correspondingly) can be different-way specified in test file.
+A simple implementation of `IUniswapV2Callee` that supports cycle swapping of tokens. In this contract and test code the following swap-cycle was hardcoded: 
+`wETH -> LINK -> DAI -> wETH`, however the first token (and the last one too, correspondingly) can be different-way specified in test file.
 
-This hw done in hardhat mainnet fork at block `16293919`. These, it was failed to complete a flashloan tokens returning (See 'Sample of Usage' output) due to a large loss occurring while flashloan was being done. But, I guess, there is a block which allows us to complete a flashloan (but how should we find it? :hmm:)
+This hw was being done in hardhat mainnet fork at block `16293919`. These, it was failed to complete a flashloan tokens returning (See 'Sample of Usage' output) due to a large loss occurring while 'flashloaning'. I guess, there is a block which allows us to complete a flashloan (but how should we find it? :hmm:)
 
 This way, there is a successful test with revert expecting down below.
 
 ## Preparing
-Node.js must be installed before work starting. Moreover, there is some modules that we need in:
+Node.js must be installed before work starting. Moreover, there are some modules that we need in:
 ```
 npm install --save-dev hardhat
 npm install module '@openzeppelin/contracts'
