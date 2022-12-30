@@ -3,7 +3,7 @@
 A simple implementation of `IUniswapV2Callee` that supports cycle swapping of tokens. In this contract and test code the following swap-cycle was hardcoded: 
 `wETH -> LINK -> DAI -> wETH`, however the first token (and the last one too, correspondingly) can be different-way specified in test file.
 
-This hw was being done in hardhat mainnet fork at block `16293919`. These, it was failed to complete a flashloan tokens returning (See 'Sample of Usage' output) due to a large loss occurring while 'flashloaning'. I guess, there is a block which allows us to complete a flashloan (but how should we find it? :hmm:)
+This hw was being done in hardhat Mainnet fork at block `16293919`. These, it was failed to complete a flashloan tokens returning (See 'Sample of Usage' output) due to a large loss occurring while 'flashloaning'. I guess, there is a block which allows us to complete a flashloan (but how should we find it? :hmm:)
 
 This way, there is a successful test with revert expecting down below.
 
